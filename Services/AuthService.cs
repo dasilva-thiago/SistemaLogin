@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SistenaLogin.Data;
 using MySqlConnector;
+using SistemaLogin.Services;
 
 namespace SistenaLogin.Services
 {

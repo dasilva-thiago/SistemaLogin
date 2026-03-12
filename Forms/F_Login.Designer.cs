@@ -1,6 +1,6 @@
 ﻿namespace SistenaLogin
 {
-    partial class Form1
+    partial class F_Login
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Login));
             label1 = new Label();
             pictureBox1 = new PictureBox();
             label2 = new Label();

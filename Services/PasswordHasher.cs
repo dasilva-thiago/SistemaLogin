@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistenaLogin
+namespace SistemaLogin.Services
 {
     internal class PasswordHasher
     {

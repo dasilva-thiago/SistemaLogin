@@ -2,9 +2,9 @@ using SistenaLogin.Services;
 
 namespace SistenaLogin
 {
-    public partial class Form1 : Form
+    public partial class F_Login : Form
     {
-        public Form1()
+        public F_Login()
         {
             InitializeComponent();
         }
