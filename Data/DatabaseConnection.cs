@@ -1,0 +1,27 @@
+﻿using MySqlConnector;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SistenaLogin.Data
+{
+    internal class DatabaseConnection
+    {
+       
+        private static readonly string connectionString =
+            
+            "Server=localhost;" +
+            "Database=sistema_login;" +
+            "Uid=root;" +
+            "Pwd=;" +
+            "Port=3306;";
+
+        public static MySqlConnection GetConnection()
+        {
+            return new MySqlConnection(connectionString);
+        }
+
+    }
+}
