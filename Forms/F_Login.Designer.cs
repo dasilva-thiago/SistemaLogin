@@ -35,7 +35,6 @@
             label3 = new Label();
             panel1 = new Panel();
             btnCadastre = new Button();
-            label5 = new Label();
             btnLogin = new Button();
             txtSenha = new TextBox();
             label4 = new Label();
@@ -49,7 +48,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.HighlightText;
-            label1.Location = new Point(161, 144);
+            label1.Location = new Point(96, 142);
             label1.Name = "label1";
             label1.Size = new Size(220, 37);
             label1.TabIndex = 0;
@@ -58,9 +57,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(194, 13);
+            pictureBox1.Location = new Point(152, 39);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(157, 128);
+            pictureBox1.Size = new Size(100, 100);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -68,20 +67,20 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9.75F);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.GrayText;
-            label2.Location = new Point(192, 181);
+            label2.Location = new Point(105, 179);
             label2.Name = "label2";
-            label2.Size = new Size(156, 17);
+            label2.Size = new Size(196, 21);
             label2.TabIndex = 2;
-            label2.Text = "Autenticação de Usuários";
+            label2.Text = "Entre com suas credenciais";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F);
             label3.ForeColor = SystemColors.HighlightText;
-            label3.Location = new Point(20, 236);
+            label3.Location = new Point(20, 251);
             label3.Name = "label3";
             label3.Size = new Size(53, 17);
             label3.TabIndex = 3;
@@ -93,7 +92,6 @@
             panel1.BackgroundImageLayout = ImageLayout.None;
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnCadastre);
-            panel1.Controls.Add(label5);
             panel1.Controls.Add(btnLogin);
             panel1.Controls.Add(txtSenha);
             panel1.Controls.Add(label4);
@@ -103,34 +101,25 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label2);
             panel1.ForeColor = Color.Gray;
-            panel1.Location = new Point(26, 29);
+            panel1.Location = new Point(26, 27);
             panel1.Name = "panel1";
-            panel1.Size = new Size(550, 519);
+            panel1.Size = new Size(402, 521);
             panel1.TabIndex = 4;
             // 
             // btnCadastre
             // 
-            btnCadastre.BackColor = Color.DarkMagenta;
-            btnCadastre.FlatStyle = FlatStyle.Popup;
+            btnCadastre.BackColor = Color.FromArgb(160, 160, 180);
+            btnCadastre.FlatAppearance.BorderColor = Color.FromArgb(80, 80, 100);
+            btnCadastre.FlatStyle = FlatStyle.Flat;
             btnCadastre.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCadastre.ForeColor = Color.Transparent;
-            btnCadastre.Location = new Point(20, 411);
+            btnCadastre.Location = new Point(20, 447);
             btnCadastre.Name = "btnCadastre";
-            btnCadastre.Size = new Size(507, 43);
+            btnCadastre.Size = new Size(352, 43);
             btnCadastre.TabIndex = 9;
-            btnCadastre.Text = "Cadastre-se";
+            btnCadastre.Text = "Criar uma conta";
             btnCadastre.UseVisualStyleBackColor = false;
             btnCadastre.Click += btnCadastre_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.Sienna;
-            label5.Location = new Point(190, 469);
-            label5.Name = "label5";
-            label5.Size = new Size(161, 15);
-            label5.TabIndex = 8;
-            label5.Text = "Mensagem de erro/validação";
             // 
             // btnLogin
             // 
@@ -138,9 +127,9 @@
             btnLogin.FlatStyle = FlatStyle.Popup;
             btnLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.Transparent;
-            btnLogin.Location = new Point(20, 352);
+            btnLogin.Location = new Point(20, 389);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(507, 43);
+            btnLogin.Size = new Size(352, 43);
             btnLogin.TabIndex = 7;
             btnLogin.Text = "Entrar";
             btnLogin.UseVisualStyleBackColor = false;
@@ -148,12 +137,15 @@
             // 
             // txtSenha
             // 
-            txtSenha.Font = new Font("Segoe UI", 8.25F, FontStyle.Italic);
-            txtSenha.ForeColor = Color.DimGray;
-            txtSenha.Location = new Point(20, 314);
+            txtSenha.BackColor = Color.FromArgb(40, 40, 55);
+            txtSenha.BorderStyle = BorderStyle.FixedSingle;
+            txtSenha.Font = new Font("Segoe UI", 9.75F, FontStyle.Italic);
+            txtSenha.ForeColor = Color.FromArgb(200, 200, 210);
+            txtSenha.Location = new Point(20, 332);
             txtSenha.Name = "txtSenha";
             txtSenha.PasswordChar = '*';
-            txtSenha.Size = new Size(507, 22);
+            txtSenha.PlaceholderText = "Digite sua senha...";
+            txtSenha.Size = new Size(352, 25);
             txtSenha.TabIndex = 6;
             txtSenha.UseSystemPasswordChar = true;
             // 
@@ -162,7 +154,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.HighlightText;
-            label4.Location = new Point(20, 290);
+            label4.Location = new Point(20, 312);
             label4.Name = "label4";
             label4.Size = new Size(43, 17);
             label4.TabIndex = 5;
@@ -170,23 +162,27 @@
             // 
             // txtUsuario
             // 
-            txtUsuario.Font = new Font("Segoe UI", 8.25F, FontStyle.Italic);
-            txtUsuario.ForeColor = Color.DimGray;
-            txtUsuario.Location = new Point(20, 260);
+            txtUsuario.BackColor = Color.FromArgb(40, 40, 55);
+            txtUsuario.BorderStyle = BorderStyle.FixedSingle;
+            txtUsuario.Font = new Font("Segoe UI", 9.75F, FontStyle.Italic);
+            txtUsuario.ForeColor = Color.FromArgb(200, 200, 210);
+            txtUsuario.Location = new Point(20, 271);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(507, 22);
+            txtUsuario.PlaceholderText = "seu.usuario";
+            txtUsuario.Size = new Size(352, 25);
             txtUsuario.TabIndex = 4;
             // 
-            // Form1
+            // F_Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 30, 30);
-            ClientSize = new Size(600, 573);
+            ClientSize = new Size(455, 573);
             Controls.Add(panel1);
+            ForeColor = Color.FromArgb(26, 26, 46);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "Form1";
+            Name = "F_Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -205,7 +201,6 @@
         private TextBox txtSenha;
         private Label label4;
         private TextBox txtUsuario;
-        private Label label5;
         private Button btnLogin;
         private Button btnCadastre;
     }
